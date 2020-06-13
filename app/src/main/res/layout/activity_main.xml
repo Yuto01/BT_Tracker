@@ -19,6 +19,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="BT_Tracker"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#F4F4F6"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="46dp"
@@ -31,17 +42,6 @@
         app:layout_constraintTop_toTopOf="@+id/view2"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@android:drawable/arrow_down_float" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:text="BT_Tracker"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#F4F4F6"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintStart_toEndOf="@+id/imageView2" />
 
     <LinearLayout
         android:layout_width="488dp"
@@ -61,7 +61,7 @@
             android:layout_weight="1"
             android:background="#029789"
             android:onClick="gotoLogActivity"
-            android:paddingLeft="10dp"
+            android:paddingLeft="8dp"
             android:paddingTop="10dp"
             android:text="@string/log_body_temperature"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#019A8C"
-            android:paddingLeft="10dp"
+            android:paddingLeft="8dp"
             android:paddingTop="10dp"
             android:onClick="goToNormalActivity"
             android:text="@string/check_normal_range"
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#009385"
-            android:paddingLeft="10dp"
+            android:paddingLeft="8dp"
             android:paddingTop="10dp"
             android:onClick="goToMechanismActivity"
             android:text="@string/mechanism_of_fever"
@@ -132,7 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#019C8D"
-            android:paddingLeft="10dp"
+            android:paddingLeft="8dp"
             android:paddingTop="10dp"
             android:onClick="goToHandleActivity"
             android:text="@string/handling_fever"
@@ -148,13 +148,14 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="set remainder"
+        android:text="set reminder"
+        android:onClick="setReminder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.925" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
